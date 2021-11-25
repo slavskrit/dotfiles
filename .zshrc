@@ -13,6 +13,8 @@ plugins=( git zsh-syntax-highlighting zsh-autosuggestions )
 
 alias ll="ls -lah"
 alias l="ll"
+alias v="nvim"
+alias vim="v"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
