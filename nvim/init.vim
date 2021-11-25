@@ -22,6 +22,8 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
+set spell                 " enable spell check (may need to download language package)
+set noswapfile            " disable creating swap file
 
 call plug#begin('~/.vim/plugged')
 
@@ -57,6 +59,8 @@ Plug 'isRuslan/vim-es6'
 
 call plug#end()
 
-" set spell                 " enable spell check (may need to download language package)
-" set noswapfile            " disable creating swap file
-" set backupdir=~/.cache/vim " Directory to store backup files.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
